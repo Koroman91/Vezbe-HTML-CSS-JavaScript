@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   <title>My first HTML page</title>
+   <meta charset="utf-8"/>
+   <link rel="stylesheet" href="Projekat.css">
+   
+   <script>
+   function changeTitle()
+   {
+	   var title = document.querySelector("#mainTitle");
+	   title.innerHTML += "<br>This new <u>title</u> has been changeg from JavaScript!";   
+   }</script>
+   <script>
+   function changeStyle()
+   {
+	   var title1 = document.querySelector("#mainTitle");
+	   title1.style.color = 'black';
+	   title1.style.backgroundColor = "yellow";  
+	   title1.style.border = "5px dashed red";
+   }</script>
+   <script>
+ 
+   function changeColor(){
+	   var promena = document.querySelector("#para");
+	   promena.style.color = "red";
+   };
+   
+   </script>
+   
+   <script>
+ 
+   
+   
+   
+   
+  </head>
+  <body>
+   <h1 id="mainTitle">First Page</h1>
+   <p id="para">
+   This is paragraph.
+   <br>
+   <h2 id="para1">My hobbie is: </h2>
+   <ol>
+   <li>I play guitar.</li>
+   <li>I code video games</li>
+   <li>I like movies</li>
+   </ol>
+   <button onclick="changeTitle();">Click me to change the title of the page</button>
+   <br>
+   <button onclick="changeStyle();">Click me to change CSS style title of the page</button>
+   <button onclick="changeColor();">Change color</button>  
+   </p>
+   <h2>Picture:</h2>
+    <img width=100 alt="First Name Last Name" src="http://www.espnfc.com/design05/images/2017/0711/gabrielbatistuta2002_800x450.jpg">
+   
+   </body>
+</html>
